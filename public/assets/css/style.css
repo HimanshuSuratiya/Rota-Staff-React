@@ -1,0 +1,4211 @@
+/*-----------------------
+Header Section CSS
+Footer Section CSS
+Dashbord Section CSS
+Sidebar Section CSS
+-----------------------*/
+
+/*----------------------
+
+Typogrophy
+/*--- font-family: 'Poppins', sans-serif; ---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap');
+
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #222 !important;
+    height: 100% !important;
+    line-height: 26px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px !important;
+    background-color: #f7f7f9 !important;
+}
+
+p {
+    color: #222;
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    /* font-weight: 400; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+.modal-backdrop {
+    background-color: #293e56bf !important;
+}
+
+.w_full {
+    width: 100%;
+}
+
+.w_19 {
+    width: 19%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* custom select element css start */
+.customSelect {
+    padding-left: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 0.5px solid #99999963;
+    border-radius: 3px;
+    z-index: 999;
+    position: absolute;
+    height: 240px;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.customSelect .customSelectItem {
+    transition: all 0.3s ease-in-out;
+}
+
+.customSelect .customSelectItem:hover {
+    background-color: #1f88b533;
+}
+
+.customSelect .customSelectItem .labelElement {
+    width: 100%;
+}
+
+.customSelect .customSelectItem .labelElement label {
+    cursor: pointer;
+}
+
+.customSelect .customSelectItem .labelElement .firstLastLetter {
+    background-color: #1f88b5;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.customSelect .customSelectItem .labelElement .fullName {
+    flex: 1;
+}
+
+.customSelect .customSelectItem .labelElement .customRadio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #888;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.customSelect .customSelectItem .labelElement .customRadio .dot {
+    height: 10px;
+    width: 10px;
+    /* background-color: #e10078; */
+    border-radius: 50%;
+}
+
+.customSelectItem [type="radio"]:checked+.labelElement .dot {
+    background-color: #e10078;
+}
+
+.customSelectItem [type="radio"]:checked+.labelElement {
+    background-color: #1f88b533;
+}
+
+.show_select {
+    display: block;
+}
+
+/* custom select element css end */
+
+
+/* Header sticky start here */
+.position {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+/* Header sticky end here */
+
+
+/*--------------------
+
+Left Side bar Info
+---------------------*/
+.left-sidebar-info {
+    background-color: #32323A;
+    width: 6%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+}
+
+.left-sidebar-info .scroll {
+    height: 72vh;
+    overflow-y: auto;
+}
+
+.left-sidebar-info .scroll::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+.left-sidebar-info:hover .scroll::-webkit-scrollbar {
+    display: block;
+    transition: 2s;
+}
+
+.left-sidebar-info .scroll::-webkit-scrollbar-thumb {
+    background-color: #106e97;
+    border-radius: 10px;
+}
+
+.left-sidebar-info .scroll::-webkit-scrollbar-track {
+    background-color: #ebe9e9;
+    border-radius: 10px;
+}
+
+.main-con-padding-hide {
+    padding-left: 0px;
+}
+
+.user-name-crical {
+    background-color: #1f88b5;
+    text-decoration: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 41px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0PX auto 28px auto;
+    padding-top: 0px;
+    position: relative;
+    top: 12px;
+}
+
+
+/*-------------------------
+
+Header Left Menu
+----------------------*/
+
+.nav-links nav ul {
+    padding: 0px;
+    text-align: center;
+}
+
+.nav-links nav ul li {
+    margin-bottom: 9px;
+}
+
+.nav-links nav ul li a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 0px;
+    display: block;
+}
+
+.nav-links nav ul li a i {
+    display: block;
+    font-size: 22px;
+    color: #1f88b5;
+}
+
+.nav-links nav ul li a.active {
+    background-color: #1f88b5;
+    display: inline-block;
+    width: 100%;
+    color: #fff !important;
+}
+
+.nav-links nav ul li a.active i {
+    color: #fff;
+}
+
+.nav-links nav ul li a:hover {
+    background-color: #1f88b5;
+
+}
+
+.nav-links nav ul li a:hover i {
+    color: #fff;
+}
+
+.nav-links nav ul li button {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 0px;
+    display: block;
+    width: 100%;
+}
+
+.nav-links nav ul li button i {
+    display: block;
+    font-size: 22px;
+    color: #1f88b5;
+}
+
+.nav-links nav ul li button:hover i {
+    color: #fff;
+}
+
+.nav-links nav ul li button.active i {
+    color: #fff;
+}
+
+.nav-links nav ul li button:hover {
+    background-color: #1f88b5;
+}
+
+.nav-links nav ul li button:focus {
+    background-color: #e6ffff;
+    color: #1f88b5;
+}
+
+.nav-links nav ul li button:focus i {
+    color: #1f88b5;
+}
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    left: 95px;
+    background-color: #e6ffff;
+    overflow-x: hidden;
+    transition: all 0.5s ease-in-out;
+    padding-top: 30px;
+}
+
+.sidepanel ul {
+    padding: 0px 10px 0px 20px !important;
+    list-style: none;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px !important;
+    color: #1f88b5 !important;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #1f88b5d4 !important;
+    background-color: unset !important;
+}
+
+.sidepanel .closebtn {
+    font-size: 20px !important;
+    color: #666 !important;
+    font-weight: 500 !important;
+}
+
+.sidepanel .svgColor {
+    fill: #1f88b5;
+    margin-right: 12px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    /* background-color: #111; */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.logo-text h3 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 22px 0px 40px 0px;
+}
+
+.logo-text h3 span {
+    color: #1f88b5;
+}
+
+.logout-right h4 {
+    text-align: right;
+    margin: 14px 13px 0px 9px;
+}
+
+.logout-right h4 a {
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #32323a;
+    color: #1f88b5;
+}
+
+.logout-right h4 a i {
+    padding-right: 5px;
+}
+
+.logout-right h4 a:hover {
+    /* color: #1f88b5; */
+}
+
+
+/*---------------
+Crical Bar Info
+---------------*/
+
+.crical-info-prt {
+    width: 75px;
+    height: 75px;
+    animation: 0.25s ease 0s 1 normal none running none;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.stock-crical-info {
+    background-color: #ffffff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    /* top: 10%; */
+    position: absolute;
+    transform: translate(5px, -70px);
+    border: 7px solid #1f88b587;
+}
+
+.stock-crical-info h2 {
+    text-align: center;
+    line-height: 54px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f88b5;
+}
+
+.cricat-up-text h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1f88b5;
+}
+
+.flx-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 32px;
+}
+
+.main-shodw-box {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: rgb(187 184 184 / 25%) 0px 2px 8px;
+    position: relative;
+    height: 585px;
+}
+
+.line-hr {
+    background-color: #1f88b5;
+    width: 100%;
+    height: 1px;
+    top: 8%;
+    margin-top: -34px;
+}
+
+.from-equal {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.my-summary-info {
+    margin-top: 115px;
+    background-color: #eef6f9;
+    width: 100%;
+    display: inline-block;
+    padding: 40px;
+    position: relative;
+}
+
+.first-from {
+    width: 100%;
+    height: 46px;
+    padding: 10px 39px;
+    border: 1px solid #000;
+    color: rgb(31 136 181);
+    border: 2px solid rgb(31 136 181);
+    outline: none;
+    background-image: url(../images/first-from-icons.png);
+    background-repeat: no-repeat;
+    background-position: 11px 8px;
+    margin-bottom: 22px;
+}
+
+.first-from::placeholder {
+    color: rgb(31 136 181);
+}
+
+.secound-from {
+    width: 100%;
+    height: 46px;
+    padding: 10px 39px;
+    color: #27a8df;
+    border: 2px solid #27a8df;
+    outline: none;
+    background-image: url(../images/seoundt-from-icons.png);
+    background-repeat: no-repeat;
+    background-position: 11px 8px;
+}
+
+.secound-from::placeholder {
+    color: #27a8df;
+}
+
+.three-from {
+    width: 100%;
+    height: 46px;
+    padding: 10px 39px;
+    color: #6aa1b9;
+    border: 2px solid #6aa1b9;
+    outline: none;
+    background-image: url(../images/three-from-icons.png);
+    background-repeat: no-repeat;
+    background-position: 11px 8px;
+}
+
+.three-from::placeholder {
+    color: #6aa1b9;
+}
+
+.four-from {
+    width: 100%;
+    height: 46px;
+    padding: 10px 39px;
+    color: #8cdbfd;
+    border: 2px solid #8cdbfd;
+    outline: none;
+    background-image: url(../images/four-from-icons.png);
+    background-repeat: no-repeat;
+    background-position: 11px 8px;
+}
+
+.four-from::placeholder {
+    color: #8cdbfd;
+}
+
+h4.my-summry-part {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    border-bottom: 1px solid #cbd2d9;
+    padding: 5px 0px 11px 0px;
+    color: #1f88b5;
+}
+
+.main-white-crical {
+    position: relative;
+    border-radius: 9999px;
+    border: 4px solid white;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.main-summery-box-strock {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    background-color: #fff;
+    border: 14px solid #1f88b5;
+    transform: translate(10px, 10px);
+}
+
+.main-summery-box-strock h2 {
+    text-align: center;
+    line-height: 89px;
+    font-size: 37px;
+    font-weight: 600;
+    color: #1f88b5;
+}
+
+.my-summary-info:before {
+    position: absolute;
+    content: "";
+    top: -52px;
+    width: 0;
+    height: 0;
+    transition: all 0.3s ease-out;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 52px solid #eef6f9;
+    left: calc(0.5% + 14.4%*3)
+}
+
+aside.right-side-info {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: rgb(187 184 184 / 25%) 0px 2px 8px;
+    position: relative;
+    width: 94%;
+}
+
+.tab-first-infos h3 a {
+    background-color: #1f88b5;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    margin: 30px 0px 14px 0px;
+}
+
+.tab-first-infos h4 a {
+    background: none;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 2px solid #1f88b5;
+    color: #1f88b5;
+}
+
+.tab-first-infos h3 a:hover {
+    background-color: #106e97;
+}
+
+.tab-first-infos h4 a:hover {
+    background-color: #106e97;
+    color: #fff;
+}
+
+.crical-onw-white {
+    width: 75px;
+    height: 75px;
+    animation: 0.25s ease 0s 1 normal none running none;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.crical-strok {
+    background-color: #ffffff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    /* top: 10%; */
+    position: absolute;
+    transform: translate(5px, -70px);
+    border: 7px solid #1f88b587;
+}
+
+.main-equal-side {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.crical-content-bar h4 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.crical-content-bar h4 strong {
+    font-weight: 600;
+}
+
+p.next {
+    padding-top: 46px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.ntn-prt {
+    display: flex;
+    margin-top: 10px;
+}
+
+.ntn-prt h5 a {
+    background-color: #fff;
+    text-decoration: none;
+    border: 2px solid #1f88b5;
+    padding: 10px 11px;
+    font-size: 13px;
+    border-radius: 2px;
+    font-weight: 400;
+    color: #1f88b5;
+    margin-right: 13px;
+}
+
+.ntn-prt h6 a {
+    background-color: #fff;
+    text-decoration: none;
+    color: rgb(112 196 249);
+    border: 2px solid rgb(112, 196, 249);
+    padding: 11px 15px;
+    font-size: 12px;
+    border-radius: 2px;
+    font-weight: 400;
+    margin-right: 13px;
+}
+
+.ntn-prt h6 {
+    margin-top: 10px;
+}
+
+.ntn-prt h6 {
+    margin-top: 3px;
+}
+
+.btn-info-sep p {
+    margin-bottom: 29px;
+}
+
+.right-side-info-bar {
+    background-color: #f7f7f9;
+    padding: 0px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0px;
+}
+
+.right-side-info .tab-content {
+    padding: 0px 20px 20px 20px;
+    height: 456px;
+}
+
+.right-side-info-bar h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+.right-side-info .nav-tabs .nav-link.active {
+    color: #1f88b5;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #1f88b5;
+    outline: none;
+    font-weight: 500;
+}
+
+.right-side-info .nav-tabs .nav-link {
+    border: none;
+    color: #1f88b5;
+}
+
+.right-side-info .nav-link {
+    padding: 0px 20px 0px 20px;
+}
+
+.right-side-info .nav-tabs {
+    /* border-bottom: 1px solid #dee2e6; */
+    border: none;
+}
+
+.over-title-top h2 {
+    font-size: 26px;
+    padding: 28px 0px 22px 27px;
+    font-weight: 600;
+}
+
+.add-btn-top h4 a {
+    background-color: #1f88b5;
+    padding: 10px 21px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.add-btn-top h4 {
+    text-align: right;
+    padding: 28px 27px 22px 0px;
+}
+
+
+
+.white-box-info {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: rgb(187 184 184 / 25%) 0px 2px 8px;
+    position: relative;
+    width: 100%;
+    padding: 14px 15px 14px 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-title-box h3 {
+    line-height: 80px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.profile-title-box {
+    width: 83px;
+    height: 83px;
+    background-color: #1f88b5;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-right: 19px;
+}
+
+.basicInfo h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 12px 0px 4px 0px;
+}
+
+.basicInfo h5 {}
+
+.basicInfo h5 a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #1f88b5;
+}
+
+
+
+.view_profile {
+    position: absolute;
+    right: 23px;
+}
+
+.view_profile h6 a i {
+    font-size: 20px;
+    color: #1f88b5;
+}
+
+.active-rots-slt-from .form-control,
+.active-rots-slt-from .form-select {
+    border-radius: 5px;
+    border: 2px solid #cbc8c8;
+    outline: none;
+    box-shadow: none;
+    margin-top: 30px;
+}
+
+.active-rots-slt-from .form-control:focus,
+.active-rots-slt-from .form-select:focus {
+    border-color: #1f88b5;
+}
+
+.publish_rota_content .no_of_rota_publish,
+.unpublish_rota_content .no_of_rota_publish {
+    color: #fff;
+    background: #1f88b5;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.publish_rota_content .view_all_btn,
+.publish_rota_content .show_less_btn,
+.unpublish_rota_content .view_all_btn,
+.unpublish_rota_content .show_less_btn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: #1f88b5;
+}
+
+.parent_div {
+    background-color: #1f88b514;
+}
+
+.parent_div .rota_shift_employee_name {
+    text-decoration: none;
+    color: #1f88b5;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.parent_div .rota_shift_employee_name:hover {
+    text-decoration: none;
+    color: #276a87;
+}
+
+.parent_div .three_dot_btn {
+    border: none;
+    background-color: inherit;
+    outline: none;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.parent_div .three_dot_btn:hover,
+.parent_div .three_dot_btn:focus {
+    fill: #fff;
+    background-color: #1f88b5;
+}
+
+.parent_div .date_of_shift_rota {
+    border-right: 2px solid #999;
+}
+
+.publish_rota_content .content_about_publish .pb-8 {
+    padding-bottom: 2rem;
+    margin-bottom: 16px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.active-rots-slt-from .form-control::placeholder {
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+.box-shod-info-part {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: rgb(187 184 184 / 25%) 0px 2px 8px;
+    position: relative;
+}
+
+.icon_info-part i {
+    font-size: 56px;
+    background-color: #1f88b5;
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    outline: 3px solid #fff;
+    outline-offset: -6px;
+    line-height: 112px;
+}
+
+.box-shod-info-part {
+    padding: 30px 32px 33px 33px;
+    margin: 31px 0px 20px 0px;
+}
+
+.content-active-tabsinfo h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.content-active-tabsinfo p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.content-active-tabsinfo {
+    padding-top: 13px;
+    /* margin: 10px; */
+}
+
+.slider-bar-post-thumbs {
+    width: 100%;
+    height: 186px;
+    overflow: hidden;
+}
+
+.slider-bar-post-thumbs img {
+    width: 100%;
+    height: 186px;
+    object-fit: cover;
+}
+
+.side-bar-info {
+    background-color: #fff;
+    padding: 11px;
+}
+
+.slider-bar-post-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0px 16px 0px;
+}
+
+.slider-bar-post-content p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.slider-bar-post-content h4 a {
+    background-color: #1f88b5;
+    padding: 8px 29px;
+    color: #fff;
+    text-decoration: none;
+    /* padding: 10px 20px; */
+    font-size: 17px;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+}
+
+.active-rots-slt-from h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 35px 0px 7px 0px;
+}
+
+.active-rots-slt-from .filter_btn {
+    margin-top: 30px;
+    padding: 5px 10px;
+    color: #1f86b2b0;
+    font-weight: 500;
+}
+
+.rotas .nav-link.active {
+    border: none;
+    border-bottom: 2.5px solid #32323a;
+    color: #106e97;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.rotas .nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #1f88b5;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: unset;
+}
+
+.rotas .nav-link:active {
+    border: none;
+}
+
+.active-rots-slt-from h4 {
+    margin: 35px 0px 7px 0px;
+    text-align: right;
+}
+
+.active-rots-slt-from h4 a {
+    background-color: #1f88b5;
+    color: #fff;
+    padding: 9px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.no-rate-see h2 {
+    font-size: 29px;
+    font-weight: 600;
+    margin-top: 59px;
+    text-transform: capitalize;
+    color: #1f88b5;
+}
+
+.box-date-info-area {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: rgb(187 184 184 / 25%) 0px 2px 8px;
+    position: relative;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+.date-and-day h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 9px 0px 11px 0px;
+}
+
+.date-and-day h5 {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.shift-box-info h3 a {
+    font-size: 21px;
+    text-decoration: none;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #1f88b5;
+    font-weight: 600;
+}
+
+.shift-box-info h3 {}
+
+
+
+
+.shift-box-info p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.shift-box-info p span {
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.shift-box-info {
+    border-top: 1px solid #ebe9e9;
+    padding: 14px 0px 13px 0px;
+    margin-top: 25px;
+}
+
+h2.unpublice-titel {
+    font-size: 29px;
+    font-weight: 600;
+    margin-top: 59px;
+    text-transform: capitalize;
+    color: #1f88b5;
+}
+
+.box-createrota-boz {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: rgb(187 184 184 / 25%) 0px 2px 8px;
+    position: relative;
+    /* padding: 20px; */
+    margin-top: 30px;
+    text-align: center;
+}
+
+.box-createrota-boz i {
+    font-size: 41px;
+    color: #ffffff;
+    margin: 10px 20px;
+    background-color: #1f88b5;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 55px;
+}
+
+.box-createrota-boz h3 {
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 14px 0px 13px 0px;
+}
+
+.box-createrota-boz p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.select-rota .card-btn {
+    position: relative;
+    border: 1px solid #9996;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 1 !important;
+    margin-right: 16px;
+}
+
+.select-rota .card-btn .radio-btn {
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    position: absolute;
+    opacity: 0 !important;
+    cursor: pointer;
+}
+
+.select-rota .card-btn input:checked+.bg-color {
+    background-color: #1f88b533;
+}
+
+.select-rota .bg-color {
+    padding: 20px;
+}
+
+.select-rota .form-select,
+.select-rota .form-control {
+    border: 2px solid #a1a9b3;
+    outline: none;
+}
+
+.select-rota .form-select:focus,
+.select-rota .form-control:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+.create-a-rota-info h2 {
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 35px 0px 23px 0px;
+}
+
+.select-rota .submit-btn button {
+    border: none;
+    outline: none;
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.select-rota .submit-btn button:hover {
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+}
+
+.formTwo .select-rota .card-btn .change-color {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.formTwo .select-rota .card-btn .custom-btn {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #1d7ea7c4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formTwo .select-rota .card-btn .custom-btn .bg-color-custom-btn {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
+.formTwo .select-rota .card-btn .change-color .bg-color {
+    padding: 10px;
+    font-weight: 600;
+}
+
+.select-rota .card-btn input:checked+.change-color {
+    background-color: #1f88b533;
+}
+
+.select-rota .card-btn input:checked+.change-color .bg-color-custom-btn {
+    background-color: #1c79a1;
+}
+
+.create-a-rota-info p {}
+
+.create-a-rota-info h3 {
+    font-size: 29px;
+    font-weight: 600;
+    margin-top: 39px;
+    text-transform: capitalize;
+    color: #1f88b5;
+}
+
+.company-seeting h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 50px 0px 31px 0px;
+    text-transform: capitalize;
+}
+
+
+.company-seeting h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+
+#calendar {
+    width: 100%;
+    padding: 0 0px;
+}
+
+.calender-Tab .nav-link.active {
+    border: none;
+    border-bottom: 2.5px solid #32323a;
+    color: #106e97;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.calender-Tab .nav-link:active {
+    border: none;
+}
+
+.calender-Tab .nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #1f88b5;
+
+}
+
+.tabs-info-content-space-bar {
+    margin-top: 38px;
+}
+
+.content-info-title select {
+    padding: 7px 26px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.content-info-title h2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.calendar .all_leave_with_color .leave {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.calendar .all_leave_with_color .annual {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #70c4f9;
+}
+
+.calendar .all_leave_with_color .sick {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #e0ae2e;
+}
+
+.calendar .all_leave_with_color .late {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #d75863;
+}
+
+.calendar .all_leave_with_color .toil {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ff9d78;
+}
+
+.calendar .all_leave_with_color .other_leave {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #7DAFA3;
+}
+
+.calendar .all_leave_with_color .pending_leave {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #E10078;
+}
+
+.content-info-title .unapproved_btn {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    background-color: #e10078;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.content-info-title .unapproved_btn:hover {
+    background-color: #ad005c;
+}
+
+.content-info-title .pending_rquest .short_name {
+    font-weight: 600;
+    color: #fff;
+    background-color: #1f88b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.content-info-title .pending_rquest .rota_shift_employee_name {
+    text-decoration: none;
+    color: #1f88b5;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.unapproved_modal_content .modal-head {
+    color: #fff;
+    background: #1f88b5;
+}
+
+.unapproved_modal_content .modal-head .close-btn {
+    color: #fff;
+    font-size: 20px;
+}
+
+.unapproved_modal_content .modal-footer .approve-btn {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    background-color: #e10078;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.unapproved_modal_content .modal-footer .approve-btn:hover {
+    background-color: #ad005c;
+}
+
+.unapproved_modal_content .modal-footer .close-btn {
+    border: none;
+    outline: none;
+    padding: 6px 16px;
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.unapproved_modal_content .modal-footer .close-btn:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border-color: #ad005c;
+}
+
+/* index page header css */
+.search_employees {
+    margin: 18px 0px 22px 0px;
+    position: relative;
+}
+
+.search_employees input {
+    border: none;
+    outline: none;
+    border: 2px solid #a1a9b3;
+    border-radius: 4px;
+    padding: 5px 25px;
+}
+
+.search_employees input:focus {
+    border-color: #1f88b5;
+}
+
+.search_employees .search_icon {
+    position: absolute;
+    top: 7px;
+    right: 13px;
+    color: #a1a9b3;
+    font-size: 18px;
+}
+
+.right_links .ul_link {
+    list-style-type: none;
+    margin-top: 16px;
+}
+
+.right_links .ul_link .list_items {
+    margin-right: 20px;
+    position: relative;
+    color: #1f88b5;
+}
+
+.right_links .ul_link .list_items .button {
+    border: none;
+    background-color: #fff;
+    color: inherit;
+    font-size: 15px;
+}
+
+.right_links .ul_link .list_items .notification-number {
+    position: absolute;
+    right: -16px;
+    bottom: 1px;
+}
+
+.right_links .ul_link .list_items .notification-number .notification {
+    background-color: red;
+    color: #fff;
+    font-size: 14px;
+    padding: 0px 8px;
+    border-radius: 50%;
+}
+
+.right_links .ul_link .list_items .question-mark {
+    font-size: 22px;
+    color: #1f88b5;
+    padding-right: 5px;
+}
+
+.right_links .ul_link .list_items .comment-icon {
+    font-size: 20px;
+    color: #1f88b5;
+    padding-right: 5px;
+}
+
+.right_links .ul_link .list_items .setting-icon {
+    font-size: 20px;
+    color: #1f88b5;
+    padding-right: 5px;
+}
+
+.right_links .ul_link .list_items .button:hover {
+    color: #1f88b5c7;
+}
+
+/* Card css start from here */
+.card .detail-area {
+    background-image: url(https://app.brighthr.com/a8f9ea56252d506d3b46.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 15px;
+    color: #fff;
+}
+
+.card .detail-area .sub-heading {
+    color: #fff;
+}
+
+.card .detail {
+    padding: 10px;
+}
+
+.card .payroll {
+    background-image: url(https://app.brighthr.com/671b1754a7825827ddd6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 15px;
+    color: #fff;
+}
+
+.card .payroll .sub-heading {
+    color: #fff;
+}
+
+.card .turbotalent {
+    background-image: url(https://app.brighthr.com/3758d61ac7482e8d1f29.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 15px;
+    color: #fff;
+}
+
+.card .turbotalent .sub-heading {
+    color: #fff;
+}
+
+.card .backtowork {
+    background-image: url(https://app.brighthr.com/c956185530f3b28647a7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 15px;
+    color: #fff;
+}
+
+.card .backtowork .sub-heading {
+    color: #fff;
+}
+
+/* Add employees css start from here */
+.follow-step .employees-detail {
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #1f88b5;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.follow-step .employees-detail .detail {
+    position: relative;
+    flex: 1 1 auto;
+    background-color: #1f88b5;
+    color: #fff;
+}
+
+.follow-step .employees-detail .detail span {
+    display: flex;
+    padding-right: 8px;
+    padding-left: 8px;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+}
+
+.follow-step .employees-detail span::after,
+.follow-step .employees-detail span::before {
+    content: " ";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-left: 1rem solid rgb(31 136 181);
+    margin-top: -20px;
+    left: 100%;
+    border-width: 21px 5px 19px 18px;
+    z-index: 1;
+}
+
+.employees-info .save-btn {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #b9b6b6;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.employees-info p {
+    font-size: 14px;
+}
+
+.add-empoly-form input {
+    border: none;
+    outline: none;
+    border: 2px solid #a1a9b3;
+    border-radius: 4px;
+    padding: 5px 25px;
+}
+
+.add-empoly-form input:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+.add-empoly-form .add-employ-btn {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(173, 0, 92);
+    color: rgb(173, 0, 92);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 3px 10px;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-empoly-form .add-employ-btn:hover {
+    background-color: rgb(173, 0, 92);
+    color: #fff;
+}
+
+.add-empoly-form .form-group label {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.add-empoly-form .inline {
+    display: inline-block;
+    position: relative;
+}
+
+.add-empoly-form .inline .search_icon {
+    position: absolute;
+    right: 13px;
+    top: 7px;
+    font-size: 18px;
+    color: #a1a9b3;
+}
+
+.employees-data .save-btn {
+    border: none;
+    outline: none;
+    background-color: rgb(173, 0, 92);
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 16px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.employees-data .cancel-btn {
+    background-color: #fff;
+    color: #ad005c;
+    border: none;
+    border: 2px solid #ad005c;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 3px 14px;
+}
+
+.employees-data .delete-btn {
+    border: none;
+    outline: none;
+    color: rgb(173, 0, 92);
+    background-color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.employees-data label {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.employees-data input,
+.employees-data .form-select {
+    border: 2px solid #a1a9b3;
+}
+
+.employees-data input:focus,
+.employees-data .form-select:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+.saved-status p {
+    font-size: 14px;
+}
+
+/* Add employees css end here */
+
+/* Employees detail start from here */
+.address-detail p {
+    font-size: 14px;
+}
+
+.address-detail .previous button {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #b9b6b6;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.address-detail .continue_save button {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #b9b6b6;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.address-detail input {
+    border: 2px solid #a1a9b3;
+}
+
+.address-detail input:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+.address-detail .save-btn {
+    border: none;
+    outline: none;
+    background-color: rgb(173, 0, 92);
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.address-detail .cancel-btn {
+    border: none;
+    outline: none;
+    border: 2px solid #ad005c;
+    color: #ad005c;
+    background-color: #fff;
+    padding: 5px 16px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+/* Employees detail end from here */
+
+/* Employment details start from here */
+.employment-details p {
+    font-size: 14px;
+}
+
+.employment-details .previous .previous_btn {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #b9b6b6;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.employment-details .continue_save button {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #b9b6b6;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.employment-details .inline {
+    position: relative;
+}
+
+.employment-details .inline .search_icon {
+    position: absolute;
+    right: 13px;
+    top: 7px;
+    font-size: 18px;
+    color: #a1a9b3;
+}
+
+.employment-details .folder-icon {
+    font-size: 25px;
+    color: #a1a9b3;
+}
+
+.employment-details .save-btn {
+    border: none;
+    outline: none;
+    background-color: rgb(173, 0, 92);
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.employment-details .cancel-btn {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #ad005c;
+    color: #ad005c;
+    padding: 6px 18px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.employment-details .added_summary ul {
+    list-style: none;
+    padding-left: 0rem;
+}
+
+.employment-details .added_summary ul li::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1f88b5;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Employment detail end here */
+
+
+/* popup css start from here */
+.employment-details .modal-dialog {
+    max-width: 800px;
+}
+
+.employment-details .modal-header {
+    background-color: #1f88b5;
+    color: #fff;
+    z-index: 10;
+}
+
+.employment-details .modal-body .image {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.employment-details .modal-body .image img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -45px;
+}
+
+.modal {
+    top: 13%;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+.modal-footer .first-btn {
+    background-color: rgb(173, 0, 92) !important;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.modal-footer .first-btn {
+    background-color: rgb(173, 0, 92);
+}
+
+.modal-footer .second-btn {
+    color: #1f88b5 !important;
+    background-color: #fff !important;
+    font-weight: 500;
+}
+
+/* popup css end here */
+
+/* Container position */
+
+.container {
+    position: relative;
+}
+
+.container #form1 {
+    transition: 0.2s;
+}
+
+.container #form2 {
+    transition: 0.2s;
+}
+
+.container #form3 {
+    transition: 0.2s;
+}
+
+/* Form1 validation error */
+#nameError {
+    color: red;
+    text-align: left;
+}
+
+#lastNamError {
+    color: red;
+    text-align: left;
+}
+
+#emailError {
+    color: red;
+    text-align: left;
+}
+
+#startDate {
+    color: red;
+    text-align: left;
+}
+
+#employTypeError {
+    color: red;
+    text-align: left;
+}
+
+/* Workin Time Pattern css start from here */
+.working-time-pattern .heading .head {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #32323a;
+}
+
+.working-time-pattern .pattern-heading {
+    border-bottom: 1px solid #88888852;
+}
+
+.working-time-pattern .pattern-heading p {
+    margin-bottom: -2px;
+    border-bottom: 3px solid #32323ae0;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #1f88b5;
+    font-weight: 600;
+}
+
+.working-time-pattern .form-heading h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.working-time-pattern .patern-detail h4 {
+    font-size: 20px;
+    margin: 32px 0px 20px 0px;
+}
+
+.working-time-pattern .form-control {
+    border: 2px solid #a1a9b3;
+}
+
+.working-time-pattern .form-control:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+.working-time-pattern .first-section {
+    border-bottom: 1px solid #1f88b561;
+    padding-bottom: 30px;
+}
+
+.working-time-pattern .first-section .custom-radio {
+    position: relative;
+    appearance: none;
+    background-color: #a1a9b34a;
+    width: 65px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.45);
+}
+
+.working-time-pattern .first-section .custom-radio:checked {
+    background-color: #1f88b5;
+}
+
+.working-time-pattern .first-section .custom-radio::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: -3px -1px 2px 1px rgb(0 0 0 / 20%);
+    transition: 0.3s;
+}
+
+.working-time-pattern .first-section .custom-radio:checked::before {
+    left: 36px;
+}
+
+.working-time-pattern .second-content .position_icon {
+    position: relative;
+}
+
+.working-time-pattern .second-content .position_icon .watch-icon {
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    color: #27a8df;
+    font-size: 25px;
+}
+
+.working-time-pattern .second-content .form_check .form-check-label {
+    border: 2px solid #a1a9b3;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+.working-time-pattern .second-content .form_check .form-check-input {
+    display: none;
+}
+
+.working-time-pattern .second-content .content-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 1.4rem;
+}
+
+.working-days .submit_btn {
+    border: none;
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.working-time-pattern .second-content {
+    border-bottom: 1px solid #1f88b561;
+    padding-bottom: 30px;
+}
+
+.working-time-pattern .third-content .content-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 1.4rem;
+}
+
+.working-time-pattern .third-content .cards .card-btn {
+    width: 13rem;
+    height: 16rem;
+    position: relative;
+    border: 1px solid #9996;
+    border-radius: 5px;
+    opacity: 1 !important;
+    margin-right: 16px;
+    box-shadow: rgb(136 136 136) 1px 4px 8px -4px;
+}
+
+.working-time-pattern .third-content .cards .card-btn .radio_btn:checked+.direct-sibling {
+    background-color: #1f88b51c;
+    height: 100%;
+}
+
+.working-time-pattern .third-content .cards .card-btn p {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.working-time-pattern .third-content .cards .card-btn h5 {
+    padding: 10px 0px 0px 10px;
+}
+
+.working-time-pattern .third-content .cards .card-btn input {
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    position: absolute;
+    opacity: 0 !important;
+    cursor: pointer;
+}
+
+.working-time-pattern .third-content .cards .heading {
+    margin-right: 35px;
+}
+
+.working-time-pattern .third-content .btn-s .save-btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+    padding: 5px 18px;
+    border-radius: 3px;
+    margin-right: 30px;
+}
+
+.working-time-pattern .third-content .btn-s .cancel-btn {
+    border: none;
+    outline: none;
+    color: rgb(173, 0, 92);
+    border: 2px solid #ad005c;
+    background-color: #fff;
+    padding: 5px 18px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* Working Time Pattern css end here */
+
+/* Fixed employee setup css start from here */
+
+#showDiv .form-control {
+    border: 2px solid #a1a9b3;
+    outline: none;
+}
+
+#showDiv .form-control:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+#showDiv .form-group .hour {
+    width: 80px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+#showDiv .form-group .placeholder-hr {
+    margin-left: -93px;
+    padding-top: 5px;
+    font-size: 14px;
+    color: #a1a9b3;
+}
+
+#showDiv .form-group .minut {
+    width: 80px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+#showDiv .form-group .placeholder-min {
+    margin-left: -108px;
+    padding-top: 5px;
+    font-size: 14px;
+    color: #a1a9b3;
+}
+
+#showDiv .folder-icon {
+    color: #a1a9b3;
+    font-size: 25px;
+}
+
+/* Fixed employee setup css end here */
+
+
+/* Contract and full time employment details css start from here */
+
+.contract-detaial thead tr th {
+    font-size: 14px;
+    font-weight: normal;
+    color: inherit;
+    padding: 5px 10px;
+}
+
+.contract-detaial tbody .form-group {
+    position: relative;
+}
+
+.contract-detaial tbody .form-group .search_icon {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 19px;
+    color: #b9b6b6;
+}
+
+.contract-detaial tbody .form-group .unit-count {
+    color: #777;
+    font-size: 14px;
+}
+
+.address-detail thead {
+    border-bottom: 1px solid #99999959;
+}
+
+.contract-detaial tbody .form-group .form-control {
+    border: 2px solid #a1a9b3;
+    outline: none;
+}
+
+.contract-detaial tbody .form-group .form-control:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+.contract-detaial tbody .form-group .folder-icon {
+    color: #a1a9b3;
+    font-size: 25px;
+}
+
+/* Contract and full time employment details css end here */
+
+/* Leave entitlement css start from here */
+.employees-data .input {
+    width: 90px;
+    margin: 0px 10px;
+}
+
+.employees-data .form-group .time {
+    position: relative;
+}
+
+.employees-data .form-group .time .time-count {
+    position: absolute;
+    right: 16px;
+    top: 7px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Leave entitlement css start from here */
+
+/* manage teams css start from here */
+
+/* tabs css start*/
+.tab-btn .nav-item {
+    flex: inherit !important;
+    margin: 5px 30px 0px 0px;
+}
+
+.tab-btn .nav-tabs {
+    padding-bottom: 10px;
+}
+
+.tab-btn .nav-item .link-nav {
+    padding: 10px;
+    text-decoration: none;
+    color: #1f88b5;
+}
+
+.tab-btn .nav-item .link-nav.active {
+    border-bottom: 2.5px solid #32323a;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tab-btn .tab-content {
+    font-size: 16px;
+}
+
+/* tabs css end here*/
+
+/* Follow Steps css start from here   */
+
+.follow-step .employees-detail .detail .s-font {
+    font-size: 14px;
+    min-height: 35px;
+}
+
+.tab-content .M-right {
+    margin-right: 15px;
+    flex: 1;
+}
+
+/* Follow Steps css end here */
+
+/* Tab three content css start from here */
+.tab-content #tabThree .team-btn button {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    background-color: #e10078;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.tab-content #tabThree .team-btn button:hover {
+    background-color: #ad005c;
+}
+
+.tab-content #tabThree .search-team label {
+    width: 80px;
+    align-self: center;
+}
+
+/* Tab three content css end here */
+
+/* Tab one content css start from here */
+.tab-content #tabOne .btn-s .add-employe {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    background-color: #e10078;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.tab-content #tabOne .btn-s .add-employe:hover {
+    background-color: #ad005c;
+}
+
+.tab-content #tabOne .btn-s .add-mult-employe {
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    background-color: #fff;
+    color: #e10078;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 20px;
+    border: 2px solid #e10078;
+    transition: 0.3s;
+}
+
+.tab-content #tabOne .btn-s .add-mult-employe:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+.tab-content #tabOne .btn-s .view-btn button {
+    border: none;
+    outline: none;
+    padding: 5px 11px;
+    background-color: #fff;
+    color: #e10078;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 2px solid #e10078;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.tab-content #tabOne .btn-s .view-btn button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+.tab-content p {
+    margin-bottom: 0px;
+}
+
+
+/* Accordion css start */
+
+.accordion .beefup__head button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: #e10078;
+    border: 2px solid #e10078;
+    font-size: 22px;
+}
+
+/* Accordion css end */
+
+/* Card css start */
+
+.accordion .card {
+    padding: 13px;
+}
+
+.accordion .card .link a {
+    display: inline-flex;
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    background-color: #1f88b5;
+    font-size: 30px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion .card .profile-detail {
+    flex: 1 1 auto;
+    margin-left: 10px;
+}
+
+.accordion .card .profile-detail p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.accordion .card .profile-detail a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #e10078;
+}
+
+.accordion .card .profile-detail a:hover {
+    text-decoration: underline;
+}
+
+.accordion .card .eye-link a {
+    color: #1f88b5;
+    font-size: 21px;
+}
+
+.accordion .card {
+    box-shadow: 0 0px 2px 0 rgb(0 0 0 / 0%), 0 1px 6px 0 rgb(0 0 0 / 8%);
+    margin: 10px;
+}
+
+/* Card css end */
+
+/* step one add empyoyee form css start */
+.tab-content .remove-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.tab-content #form1 .add-margin {
+    margin-bottom: 20px;
+}
+
+.employees-data .cancel_btn {
+    background-color: #fff !important;
+    border: 2px solid #e10078 !important;
+    color: #e10078 !important;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.employees-data .cancel_btn:hover {
+    color: #fff !important;
+    background-color: #ad005c !important;
+    border: 2px solid #ad005c !important;
+}
+
+/* step one add empyoyee css end here */
+
+
+/* step two add empyoyee css start from here */
+
+#form2 .address-detail .card-btn {
+    position: relative;
+    border: 1px solid #9996;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 1 !important;
+    margin-right: 16px;
+    box-shadow: rgb(136 136 136) 1px 4px 8px -4px;
+}
+
+#form2 .address-detail .card-btn h5 {
+    padding: 8px 0px 0px 8px;
+}
+
+#form2 .address-detail .card-btn p {
+    padding: 8px;
+}
+
+#form2 .address-detail .card-btn input {
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    position: absolute;
+    opacity: 0 !important;
+    cursor: pointer;
+}
+
+#form2 .address-detail .card-btn input:checked+.bg-color {
+    background-color: #1f88b533;
+}
+
+#form2 .address-detail .previous button {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#form2 .address-detail .previous button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    ;
+    border: 2px solid #ad005c;
+}
+
+#form2 .address-detail .continue_save button {
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    transition: 0.3s;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#form2 .address-detail .continue_save button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#form2 .address-detail .cancel button {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    transition: 0.3s;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#form2 .address-detail .cancel button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+/* step two add empyoyee css end here */
+
+/* step three working hour css start from here */
+#form3 .employment-details .inc-size {
+    font-size: 16px;
+}
+
+#form3 .employment-details .time-in-hour {
+    position: relative;
+}
+
+#form3 .employment-details .time-in-hour .hour {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    opacity: 0.5;
+}
+
+#form3 .employment-details .time-in-minut {
+    position: relative;
+}
+
+#form3 .employment-details .time-in-minut .mins {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    opacity: 0.5;
+}
+
+#form3 .employment-details .previous button {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#form3 .employment-details .previous button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#form3 .employment-details .continue_save button {
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#form3 .employment-details .continue_save button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#form3 .employment-details .cancel button {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#form3 .employment-details .cancel button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+/* step three working hour end here */
+
+
+/* Step Four Annual leave entitlement css start from here */
+#form4 .Annual-leave-entitlement .card-btn {
+    position: relative;
+    border: 1px solid #9996;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 1 !important;
+    margin-right: 16px;
+    box-shadow: rgb(136 136 136) 1px 4px 8px -4px;
+}
+
+#form4 .Annual-leave-entitlement .card-btn h5 {
+    padding: 8px 0px 0px 8px;
+    font-size: 16px;
+}
+
+#form4 .Annual-leave-entitlement .card-btn p {
+    padding: 0px 0px 5px 5px;
+    font-size: 11px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#form4 .Annual-leave-entitlement .card-btn input {
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    position: absolute;
+    opacity: 0 !important;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#form4 .Annual-leave-entitlement .card-btn input:checked+.bg-color {
+    background-color: #1f88b533;
+}
+
+#form4 .Annual-leave-entitlement .time .input-position {
+    position: relative;
+}
+
+#form4 .Annual-leave-entitlement .time .child {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    opacity: 0.6;
+}
+
+#form4 .Annual-leave-entitlement .days .input-position {
+    position: relative;
+}
+
+#form4 .Annual-leave-entitlement .days .child {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    opacity: 0.6;
+}
+
+#form4 .Annual-leave-entitlement .previous button {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+#form4 .Annual-leave-entitlement .previous button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#form4 .Annual-leave-entitlement .continue_save button {
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+#form4 .Annual-leave-entitlement .continue_save button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#form4 .Annual-leave-entitlement .cancel button {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#form4 .Annual-leave-entitlement .cancel button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+
+/* Step Four Annual leave entitlement end here */
+
+/* Step Five Summry start from here */
+#form5 .summary .parent-border {
+    border: 1px solid #99999982;
+}
+
+#form5 .summary .parent-border .B-bottom {
+    border-bottom: 1px solid #99999982;
+    padding: 15px;
+}
+
+#form5 .summary .parent-border .B-bottom b {
+    font-weight: 500;
+}
+
+#form5 .summary .parent-border .B-bottom:last-child {
+    border-bottom: none;
+}
+
+/* custom toggle button css start */
+#form5 .summary .toggle-check .custom-check {
+    position: relative;
+    height: 30px;
+    width: 55px;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.45);
+    margin-left: 15px;
+}
+
+#form5 .summary .toggle-check .custom-check:checked[type="checkbox"] {
+    background-color: #27a8df;
+}
+
+#form5 .summary .toggle-check .custom-check::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#form5 .summary .toggle-check .custom-check:checked[type="checkbox"]:before {
+    left: 28px;
+}
+
+#form5 .summary .previous button,
+#form6 .previous a {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+/* Custom toggle button css end here */
+
+#form5 .summary .previous button:hover,
+#form6 .previous a:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#form5 .summary .continue_save button,
+#form6 .continue_save button {
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+#form5 .summary .continue_save button:hover,
+#form6 .continue_save button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#form5 .summary .cancel button,
+#form6 .cancel button {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#form5 .summary .cancel button:hover,
+#form6 .cancel button:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+/* Step Five Summry end here */
+
+
+/* Tab form css end */
+
+
+/* Tab one content css end here */
+
+/* Tab three css start from here */
+#tabThree .modal .modal-head {
+    background-color: #106e97;
+    color: #fff;
+}
+
+#tabThree .modal .modal-head .close-btn {
+    background-color: #106e97;
+    color: #fff;
+    font-size: 22px;
+}
+
+#tabThree .modal .modal-head .close-btn:hover {
+    background-color: #106e97;
+    color: #fff;
+}
+
+#tabThree .modal .modal-footer .close {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 16px;
+}
+
+#tabThree .modal .modal-footer .close:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#tabThree .modal .modal-footer .save-btn {
+    padding: 8px 20px;
+}
+
+#tabThree .modal-backdrop {
+    background-color: #1f88b55c;
+}
+
+#tabThree .modal .content-modal {
+    top: 10vh;
+}
+
+#tabThree .modal .modal-dialog .select-employee {
+    background-color: unset;
+    color: #1f88b5;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+#tabThree .modal .modal-dialog .select-employee:hover {
+    background-color: unset;
+    color: #1f88b5;
+}
+
+#tabThree .modal .modal-dialog .employee-name .name {
+    height: 70px;
+    border: 2px solid rgb(206, 211, 217);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+#tabThree .modal .modal-dialog .employee-name .name p {
+    font-weight: 400;
+}
+
+#tabThree .cards {
+    padding: 15px;
+    box-shadow: 0 0px 2px 0 rgb(0 0 0 / 0%), 0 1px 6px 0 rgb(0 0 0 / 8%);
+    margin: 10px;
+}
+
+#tabThree .cards .name {
+    background: #1f88b5;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#tabThree .cards .name .name-text {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#tabThree .cards .icons .edit-icon {
+    color: #1f88b5;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#tabThree .cards .team-name {
+    flex: 1;
+    margin-left: 10px;
+}
+
+#tabThree .cards .team-name .fname {
+    font-weight: 500;
+}
+
+#tabThree .cards .team-name .no-of-emb {
+    color: #737980;
+    font-size: 14px;
+}
+
+#tabThree .cards .icons .delet-icon {
+    color: #1f88b5;
+    font-size: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Tab two three css end here */
+
+/* manage teams css end here */
+/* Annual absence page css start from here */
+.annual-leave .heading .head {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #99999926;
+}
+
+.annual-leave .absance-btn {
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.annual-leave .absance-btn:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+.annual-leave .dash-btn {
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.annual-leave .dash-btn:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+.annual-leave .position-rel {
+    position: relative;
+}
+
+.annual-leave .position-rel .position-abs {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    color: #a1a9b3;
+    font-size: 20px;
+}
+
+/* Annual absence page css end here */
+
+/* Personal detail page css start from here */
+.user-detail {
+    padding: 15px;
+    border: 1px solid #1f88b54f;
+    border-radius: 3px;
+}
+
+.user-detail .user-name {
+    margin-right: 30px;
+}
+
+.user-detail .user-name .short-name {
+    width: 180px;
+    height: 180px;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 50%;
+    background-color: #1f88b5;
+    color: #fff;
+    box-shadow: rgb(207 216 220) 0px 3px 6px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-detail .mail-info {
+    align-self: center;
+}
+
+.mail-info .full-name {
+    margin-bottom: 20px;
+}
+
+.mail-info .mail-account {
+    margin-right: 35px;
+}
+
+.mail-info .mail-link {
+    margin-bottom: 10px;
+}
+
+.mail-info .mail-link a .mail-icon {
+    padding-right: 5px;
+}
+
+.mail-info .mail-link a {
+    text-decoration: none;
+    color: #1f88b5;
+}
+
+.mail-info .mail-link a:hover {
+    color: #1f88b5d9;
+}
+
+.mail-info .mail-link a:active {
+    text-decoration: underline;
+}
+
+.mail-info .mail-account .registraion-btn button {
+    border: none;
+    outline: none;
+    background-color: #e10078;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.mail-info .mail-account .registraion-btn button:hover {
+    background-color: #ad005c;
+}
+
+
+.mail-info .working-status {
+    padding: 10px;
+    background-color: #1f88b533;
+    border-radius: 3px;
+}
+
+.mail-info .working-status p {
+    margin-bottom: 0px;
+}
+
+.mail-info .working-status button {
+    border: none;
+    background: unset;
+    color: #1f88b5;
+    padding: 0px;
+}
+
+.mail-info .working-status button:focus {
+    box-shadow: none;
+}
+
+/* Personal detail Tabs start from here */
+.tabs .tab-parent {
+    border: 1px solid #33333338;
+    border-radius: 3px;
+}
+
+.tab-parent .link-nav {
+    padding: 10px 40px !important;
+}
+
+.tab-parent .nav-item {
+    margin: 20px 0px 0px 0px !important;
+}
+
+.tab-content .add-padding {
+    padding: 15px;
+}
+
+.tabs .tab-content .form-group .form-control {
+    border: 2px solid #a1a9b3;
+}
+
+.tabs .tab-content .form-group .form-control:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+.tabs .tab-content .form-group .label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 20 20'%3E %3Cpath d='M10 1l-5 7h10l-5-7zM10 19l5-7h-10l5 7z' fill='%23A1A9B3'%3E%3C/path%3E %3C/svg%3E") !important;
+    background-size: 15px 18px !important;
+    background-position: right 5px center !important;
+}
+
+.tabs .tab-content .absen-title h2 {
+    margin: 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#tabOne .annual-leave,
+.sickness,
+.lateness {
+    margin-bottom: 20px;
+}
+
+#tabOne .annual-leave p,
+.sickness p,
+.lateness p {
+    font-weight: 600;
+    color: #333333;
+}
+
+#tabOne .absance-section .min-1 {
+    margin: 0px 15px;
+}
+
+#tabOne .absance-section .slash h4 {
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+#tabOne .absance-section span {
+    opacity: 0.7;
+}
+
+#tabOne .absance-section .add-time-btn button {
+    border: none;
+    outline: none;
+    background-color: #e10078 !important;
+    color: #fff !important;
+    padding: 8px 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 2px solid #e10078 !important;
+    border-radius: 4px;
+}
+
+#tabOne .absance-section .add-time-btn button:hover {
+    background-color: #ad005c !important;
+    border: 2px solid #ad005c !important;
+}
+
+#tabOne .absance-section .add-time-btn,
+.add-btn {
+    margin: 16px 8px;
+}
+
+#tabOne .absance-section .add-time-btn button,
+.add-btn button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #e10078;
+    padding: 8px 16px;
+    font-weight: 600;
+    line-height: 1;
+    transition: 0.3s;
+    border: 2px solid #e10078;
+    border-radius: 4px;
+}
+
+#tabOne .absance-section .add-time-btn button:hover,
+.add-btn button:hover {
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+    color: #fff;
+}
+
+
+#tabOne .accordion .accordion-body ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#tabOne .accordion .accordion-body .mandat-leave {
+    text-decoration: none;
+    color: #1f88b5;
+}
+
+#tabOne .accordion .accordion-body .mandat-leave:hover {
+    text-decoration: none;
+    color: #1f88b5d9;
+}
+
+#tabOne .accordion .accordion-button {
+    padding: 8px;
+    color: #333333;
+    font-weight: 600;
+}
+
+#tabOne .accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#tabOne .accordion .accordion-button::after {
+    border: 2px solid #e10078;
+    border-radius: 50%;
+    padding: 18px 18px;
+    background-position: center;
+}
+
+#tabOne .accordion .modal-btn {
+    background-color: unset;
+    border: none;
+}
+
+/* Tab two css start from here */
+#tabTwo .accordion .accordion-button::after {
+    border: 2px solid #e10078;
+    border-radius: 50%;
+    padding: 18px 18px;
+    background-position: center;
+}
+
+#tabTwo .accordion .accordion-body {
+    padding: 10px;
+}
+
+#tabTwo .accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#tabTwo .accordion .accordion-item {
+    border: 1px solid #1f88b54f;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #333333 !important;
+}
+
+#tabTwo .accordion .head .heading {
+    font-weight: 600;
+}
+
+#tabTwo .accordion .opcity {
+    opacity: 0.7;
+}
+
+#tabTwo .accordion .employees-data .position {
+    position: relative;
+}
+
+#tabTwo .accordion .employees-data .position .sub-head {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+#tabTwo .accordion .employees-data .col-form-label {
+    font-size: 16px;
+}
+
+#tabTwo .accordion .accordion-body .detail .inc-weight {
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+#tabTwo .accordion .modal-btn {
+    background-color: unset;
+    border: none;
+    color: #0057ad;
+}
+
+#tabTwo .accordion .accordion-body .detail .card-btn {
+    position: relative;
+    border: 1px solid #9996;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 1 !important;
+    width: fit-content;
+    margin-right: 16px;
+    box-shadow: rgb(136 136 136) 1px 4px 8px -4px;
+}
+
+#tabTwo .accordion .accordion-body .detail .card-btn .bg-color h5 {
+    color: #333333;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+#tabTwo .accordion .accordion-body .detail .card-btn input[type="radio"] {
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    position: absolute;
+    opacity: 0 !important;
+    cursor: pointer;
+}
+
+#tabTwo .accordion .accordion-body .detail .card-btn input[type="radio"]:checked+.bg-color {
+    background-color: #1f88b533;
+}
+
+/* Tab two css end here */
+
+/* Tab three css start from here */
+
+#tabThree .overtime-btn button {
+    border: none;
+    outline: none;
+    background-color: #e10078;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+#tabThree .overtime-btn button:hover {
+    background-color: #ad005c;
+    border-color: #ad005c;
+}
+
+#tabThree .heading h5 {
+    padding: 10px;
+    font-weight: 600;
+    background-color: #e7f1ff;
+}
+
+#tabThree .over-time .hour-mint {
+    margin: 5px 0px;
+}
+
+#tabThree .over-time .hour-mint h5 {
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+#tabThree .over-time .opcity {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+#tabThree .toil-btn {
+    padding: 15px;
+}
+
+#tabThree .toil-btn a {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+#tabThree .toil-btn a:hover {
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+    color: #fff;
+}
+
+#tabThree .accordion .accordion-button {
+    padding: 10px;
+}
+
+#tabThree .accordion .head .heading {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#tabThree .accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#tabThree .accordion .accordion-button::after {
+    border: 2px solid #e10078;
+    border-radius: 50%;
+    padding: 18px 18px;
+    background-position: center;
+}
+
+/* Tab three css end here */
+
+/* Tab four css start from here */
+
+#tabFour .accordion .accordion-button::after {
+    border: 2px solid #e10078;
+    border-radius: 50%;
+    padding: 18px 18px;
+    background-position: center;
+}
+
+#tabFour .accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#tabFour .accordion .accordion-body button {
+    border: none;
+    outline: none;
+    color: #0057ad;
+    background-color: unset;
+}
+
+#tabFour .accordion .accordion-body .inc-size {
+    font-size: 16px;
+}
+
+#tabFour .accordion .accordion-body .inc-weight {
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+#tabFour .accordion .accordion-body .form-control {
+    border: 2px solid #a1a9b3;
+    outline: none;
+}
+
+#tabFour .accordion .accordion-body .form-control:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+#tabFour .accordion .accordion-body .submit-btns .save-btn button {
+    border: none;
+    outline: none;
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 3px 12px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+#tabFour .accordion .accordion-body .submit-btns .save-btn button:hover {
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+    color: #fff;
+}
+
+#tabFour .accordion .accordion-body .submit-btns .cancel-btn button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 3px 12px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+#tabFour .accordion .accordion-body .submit-btns .cancel-btn button:hover {
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+    color: #fff;
+}
+
+/* Tab four css end here */
+
+/* Tab five css start from here */
+#tabFive p {
+    font-weight: 400;
+}
+
+#tabFive .add-contant {
+    margin-bottom: 1rem;
+}
+
+#tabFive .btn-add {
+    margin-bottom: 1rem;
+}
+
+#tabFive .btn-add button {
+    border: none;
+    outline: none;
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+#tabFive .btn-add button:hover {
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+    color: #fff;
+}
+
+#tabFive .form-control {
+    border: 2px solid #a1a9b3;
+    outline: none;
+}
+
+#tabFive .form-control:focus {
+    border: 2px solid #1f88b5;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 8px;
+}
+
+#tabFive .custom-radio {
+    position: relative;
+    height: 30px;
+    width: 55px;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 45%);
+}
+
+#tabFive .custom-radio:checked {
+    background-color: #1f88b5;
+}
+
+#tabFive .custom-radio:checked::before {
+    left: 28px;
+}
+
+#tabFive .custom-radio::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 40%);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#tabFive .save-btn button {
+    border: none;
+    outline: none;
+    background-color: #e10078;
+    color: #fff;
+    border: 2px solid #e10078;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 3px 15px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+#tabFive .save-btn button:hover {
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+}
+
+#tabFive .cancel-btn button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #e10078;
+    border: 2px solid #e10078;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 3px 15px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+#tabFive .cancel-btn button:hover {
+    background-color: #ad005c;
+    border: 2px solid #ad005c;
+    color: #fff;
+}
+
+#tabFive #show {
+    display: none;
+}
+
+/* Tab five css end here */
+
+/* Personal detail Tabs end here */
+
+/* Personal detail page css end here */
+
+/* timeline-view page css start from here */
+
+#timeline .rota_name .breadcrum a {
+    color: #1f88b5;
+    text-decoration: none;
+}
+
+#timeline .shift-patern .input_custom_btn {
+    display: none;
+}
+
+#timeline .shift-patern .label_custom {
+    border: 2px solid #1f88b538;
+    padding: 8px 15px;
+    color: #1f88b5;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+#timeline .shift-patern .label_custom:hover {
+    background-color: #1f88b538;
+}
+
+#timeline .shift-patern .input_custom_btn:checked+.label .label_custom {
+    background-color: #1f88b538;
+}
+
+#timeline .shift-patern .label {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+#timeline .shift-patern .select-shift {
+    margin: 5px 0px;
+}
+
+#timeline .drag-table-link a {
+    color: #e10078;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+#timeline .drag-table-link a:hover {
+    color: #ad005c;
+}
+
+#timeline .accordion .accordion-button {
+    box-shadow: none;
+}
+
+#timeline .accordion .accordion-button:after {
+    border: 2px solid #e10078;
+    border-radius: 50%;
+    padding: 18px 18px;
+    background-position: center;
+}
+
+#timeline .accordion .accordion-body .date-of-shift,
+#timeline .accordion .accordion-body .amount-of-shift,
+#timeline .accordion .accordion-body .add-shift-btn {
+    padding: 6px 12px;
+}
+
+#timeline .accordion .accordion-body .add-shift-btn .modal-btn {
+    border: none;
+    background: unset;
+    color: #1f88b5;
+    font-weight: 500;
+}
+
+.addShift .modal-body #form1 .date-of-weak-shift {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.addShift .btn-footer-modal {
+    border: none;
+    outline: none;
+    border: 2px solid #e10078;
+    color: #e10078;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    padding: 5px 16px;
+}
+
+.addShift .btn-footer-modal:hover {
+    border-color: #ad005c;
+    background-color: #ad005c;
+    color: #fff;
+}
+
+.addShift .modal-dialog .employee-name .name {
+    height: 70px;
+    border: 2px solid rgb(206, 211, 217);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+}
+
+.addShift .form-control {
+    border: 2px solid #a1a9b3;
+    box-shadow: none;
+}
+
+.addShift .form-control:focus {
+    border: 2px solid #1c79a1;
+    box-shadow: none;
+}
+
+.addShift p {
+    margin-bottom: 0px !important;
+}
+
+.addShift .modal-dialog .select-employee {
+    background-color: unset;
+    color: #1f88b5;
+    padding: 0px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.addShift .remove-padding .date-of-weak-shift {
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.addShift .modal-dialog .employee-name .custom_checkbox {
+    display: none;
+}
+
+.addShift .modal-dialog .employee-name .custom_checkbox:checked+.name {
+    background-color: #1c79a114;
+    border-color: #1c79a157;
+}
+
+.addShift .modal-dialog .employee-name .custom_checkbox:checked+.name .select_tick {
+    display: block;
+}
+
+.addShift .modal-dialog .employee-name .name .select_tick {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+}
+
+.addShift .modal-dialog .employee-name .name .select_tick .right_tick {
+    color: #fff;
+    background: #1f88b5db;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.addShift .modal-dialog .employee-name .name .select_tick {
+    display: none;
+}
+
+.addShift .modal-dialog .follow-step .employees-detail {
+    margin-right: 0px;
+}
+
+#timeline .accordion .accordion-body .w_full {
+    width: 100%;
+    border: 1px solid #bbc0c3;
+    position: relative;
+    line-height: 11px;
+    display: flex;
+}
+
+#timeline .accordion .accordion-body .w_full .hour_box {
+    border-right: 1px solid #bbc0c3;
+    height: 2.75rem;
+    display: inline-block;
+    padding: 2px;
+}
+
+#timeline .accordion .accordion-body .w_full .hour_box:nth-child(24) {
+    border-right: none;
+}
+
+#timeline .accordion .accordion-body {
+    padding: 0px;
+}
+
+#timeline .accordion .accordion-body .w_full .shift_timing_btn {
+    width: 33.3333%;
+    position: absolute;
+    border: none;
+    background: #fff;
+    outline: none;
+    left: 37.5%;
+    line-height: 1rem;
+    border-bottom: 3px solid #999;
+}
+
+#timeline .accordion .accordion-body .w_full .shift_timing_btn .name_of_member {
+    background: #1f88b5;
+    border-radius: 50%;
+    height: 39px;
+    width: 39px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timeline .accordion .accordion-body .w_full .shift_timing_btn .name_of_person {
+    margin: 0px 10px;
+    font-weight: 500;
+}
+
+#timeline .accordion .accordion-body .w_full .shift_timing_btn .shift_timeing_duration {
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+#timeline .accordion .accordion-body .w_full .modal-dialog {
+    max-width: 800px;
+}
+
+#exampleModalShiftModal .modal-dialog .modal-header {
+    background-color: #1f88b5;
+    color: #fff;
+}
+
+#exampleModalShiftModal .modal-dialog .modal-header .btn_close {
+    border: none;
+    outline: none;
+    background-color: initial;
+    color: #fff;
+    font-size: 22px;
+}
+
+#exampleModalShiftModal .modal-content .modal-footer .close_modal_btn {
+    border: none;
+    outline: none;
+    border: 2px solid #e10078;
+    color: #e10078;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    padding: 6px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#exampleModalShiftModal .modal-content .modal-footer .close_modal_btn:hover {
+    border: 2px solid #ad005c;
+    background-color: #ad005c;
+    color: #fff;
+}
+
+#exampleModalShiftModal .modal-content .delete_modal_btn {
+    border: none;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+    background-color: inherit;
+    color: #e10078;
+    padding: 6px 16px;
+    border-radius: 5px;
+    border: 2px solid #e10078;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+#exampleModalShiftModal .modal-content .delete_modal_btn:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border: 2px solid #ad005c;
+}
+
+#timeline .print_and_publish_button .print_btn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border: 2px solid #e10078;
+    background-color: #e10078;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+#timeline .print_and_publish_button .print_btn:hover {
+    background-color: #ad005c;
+    border-color: #ad005c;
+}
+
+#timeline .print_and_publish_button .publish_btn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border: 2px solid #e10078;
+    background-color: #e10078;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#timeline .print_and_publish_button .publish_btn:hover {
+    background-color: #ad005c;
+    border-color: #ad005c;
+}
+
+#timeline .print_and_publish_button .modal-header {
+    background-color: #1f88b5;
+    color: #fff;
+}
+
+#timeline .print_and_publish_button .publish_modal {
+    padding: 15px;
+}
+
+#timeline .print_and_publish_button .modal-dialog .cancel_btn {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #e10078;
+    color: #e10078;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#timeline .print_and_publish_button .modal-header .modal_close_btn {
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: 22px;
+}
+
+#timeline .print_and_publish_button .modal-dialog .cancel_btn:hover {
+    background-color: #ad005c;
+    color: #fff;
+    border-color: #ad005c;
+}
+
+#timeline .print_and_publish_button .modal-dialog {
+    max-width: 800px;
+    top: 20vh;
+}
+
+#timeline .print_and_publish_button .modal-dialog .publish_btn_footer {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border: 2px solid #e10078;
+    background-color: #e10078;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#timeline .print_and_publish_button .modal-dialog .publish_btn_footer:hover {
+    background-color: #ad005c;
+    border-color: #ad005c;
+}
+
+/* timeline-view page css end here */
+
+.shrink_all>* {
+    flex: 1;
+    font-weight: 600;
+}
+
+.view_detail_modal {
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.view_detail_modal .custom_checkbox {
+    border: 1px solid #e10078;
+    border-radius: 2px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.view_detail_modal .custom_checkbox span {
+    background-color: #fff;
+    color: #fff;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.view_detail_modal #break_check:checked+.custom_checkbox span {
+    background-color: #e10078;
+}
+
+.row_detail .shrink_all>* {
+    font-weight: inherit;
+    opacity: 0.7;
+}
+
+.w_full .shrink_all .w_19:last-child {
+    background-color: #e5f6f6;
+}
+
+.w_full .hour_count .w_19:last-child {
+    background-color: #e5f6f6;
+}
+
+/* add lateness css start */
+.custom_label {
+    padding: 5px 10px;
+    border: 2px solid #1f88b599;
+    border-radius: 5px;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: all 0.6s ease-in-out;
+}
+
+.custom_label .parent_custom_radio {
+    border: 2px solid #1f88b5c9;
+    display: inline-flex;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+    background-color: #fff;
+}
+
+.custom_label .parent_custom_radio .custom_radio {
+    height: 10px;
+    display: inline-block;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.custom_radio_input:checked+.custom_label {
+    background: #1f88b51c;
+}
+
+.custom_radio_input:checked+.custom_label .parent_custom_radio .custom_radio {
+    background-color: #1f88b5;
+}
+
+.tooltip_custom svg {
+    color: #1f88b5;
+    cursor: help;
+    margin-left: 10px;
+}
+
+.tooltip_custom .position-abs {
+    display: none;
+}
+
+.tooltip_custom .position-abs p {
+    background-color: #737980;
+    color: #fff;
+    margin-bottom: 0px;
+    border-radius: 2px;
+    padding: 5px;
+    width: 58vw;
+    font-size: 14px;
+}
+
+.tooltip_custom:hover .position-abs {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+}
+
+/* add lateness css end */
+
+/* Himanshu Suratiya Css Start*/
+.header_link {
+    display: none;
+}
+
+.add_trans {
+    transform: scale(1.2);
+}
+
+/* Himanshu Suratiya Css End*/
