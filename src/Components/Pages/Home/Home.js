@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Header from "../../Common components/Header/Header";
-import Sidebar from "../../Common components/Sidebar/Sidebar";
 
 const Home = () => {
 
@@ -48,7 +47,6 @@ const Home = () => {
                     <div className="row m-0">
                         {/* Left Side Bar Section Start Here */}
                         <div className="col-lg-1 p-0">
-                            <Sidebar />
                         </div>
                         <div className="col-lg-11">
                             <div className="row">

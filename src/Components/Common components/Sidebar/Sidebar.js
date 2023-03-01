@@ -139,18 +139,15 @@ const Sidebar = () => {
                   </div>
                 </div>
                 <div className="scroll">
-                  <li><NavLink to="/" className="active"><i className="fa fa-home"></i>Home</NavLink></li>
-                  <li><a href="./calendar.html"><i className="fa fa-calendar-check-o"></i>Calendar</a></li>
+                  <li><NavLink to="/"><i className="fa fa-home"></i>Home</NavLink></li>
+                  <li><NavLink to="/calendar"><i className="fa fa-calendar-check-o"></i>Calendar</NavLink></li>
                   <li><NavLink to="/employees-teams"><i className="fa fa-users"></i>Employees</NavLink></li>
-                  <li><a href="./rota-planner.html"><i className="fa fa-id-card-o"></i>Rotas</a></li>
-                  <li><a href="add-employees.html"><i className="fa fa-user-o" aria-hidden="true"></i>Add employees</a>
-                  </li>
-                  <li><a href="add-sickness.html"><i className="fa fa-medkit" aria-hidden="true"></i>Add sickness</a></li>
-                  <li><a href="annual-leave.html"><i className="fa fa-clock-o" aria-hidden="true"></i>Annual leave</a>
-                  </li>
-                  <li><a href="add-lateness.html"><i className="fa fa-sun-o" aria-hidden="true"></i>Add Lateness</a></li>
-                  <li><a href="other-absence.html"><i className="fa fa-sun-o" aria-hidden="true"></i>Add Other Absence</a>
-                  </li>
+                  <li><NavLink to="/rota-planner"><i className="fa fa-id-card-o"></i>Rotas</NavLink></li>
+                  <li><NavLink to="/add-employees"><i className="fa fa-user-o" aria-hidden="true"></i>Add employees</NavLink></li>
+                  <li><NavLink to="/add-sickness"><i className="fa fa-medkit" aria-hidden="true"></i>Add sickness</NavLink></li>
+                  <li><NavLink to="/annual-leave"><i className="fa fa-clock-o" aria-hidden="true"></i>Annual leave</NavLink></li>
+                  <li><NavLink to="/add-lateness"><i className="fa fa-sun-o" aria-hidden="true"></i>Add Lateness</NavLink></li>
+                  <li><NavLink to="/add-other-absence"><i className="fa fa-sun-o" aria-hidden="true"></i>Add Other Absence</NavLink></li>
                 </div>
               </ul>
             </nav>

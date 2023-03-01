@@ -1,35 +1,32 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "./Components/Pages/Home/Home";
 import PersonalDetail from "./Components/Pages/Personal Detail/PersonalDetail";
+import Home from "./Components/Pages/Home/Home";
+import Calendar from "./Components/Pages/Calendar/Calendar";
 import Employees from "./Components/Pages/Employees/Employees";
+import Rotas from "./Components/Pages/Rotas/Rotas";
+import AddEmployees from "./Components/Pages/Add Employees/AddEmployees";
+import AddSickness from "./Components/Pages/Add Sickness/AddSickness";
+import AnnualLeave from "./Components/Pages/Annual Leave/AnnualLeave";
+import AddLateness from "./Components/Pages/Add Lateness/AddLateness";
+import AddOtherAbsence from "./Components/Pages/Add Other Absence/AddOtherAbsence";
+import Sidebar from "./Components/Common components/Sidebar/Sidebar";
 
 function App() {
   return (
     <>
+      <Sidebar />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/personal-detail" element={<PersonalDetail />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/calendar" element={<Calendar />} />
         <Route path="/employees-teams" element={<Employees />} />
-        {/*<Route path="/login/*" element={<LoginLayout />} />
-        <Route path="/signup/*" element={<SignupLayout />} />
-        <Route path="/post-a-task" element={<PostATasker />} />
-        <Route path="/how-it-works" element={<Howitwork />} />
-        <Route path="/help" element={<Help />} />
-        <Route path="/contact-us" element={<Contactus />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-conditions" element={<TermsAndConditions />} />
-        <Route path="/profile" element={<MyProfile />} />
-        <Route path="/wallet/*" element={<WalletLayout />} />
-        <Route path="/notification" element={<Notification />} />
-        <Route path="/browse-requests/*" element={<BrowseRequestLayout heading={'Browse-Request'} />} />
-        <Route path="/my-tasks/*" element={<MyTasksLayout />} />
-        <Route path="/past-tasks" element={<PastTasks />} />
-        <Route path="/my-proposals/*" element={<MyProposalLayout />} />
-        <Route path="/my-requests" element={<MyRequest />} />
-        <Route path="/user-profile" element={<UserProfile />} />
-        <Route path="/category/:name/*" element={< CategoriesLayout />} />
-        <Route path="/search-posts/*" element={<BrowseRequestLayout heading={'Search-Posts'} />} /> */}
+        <Route path="/rota-planner" element={<Rotas />} />
+        <Route path="/add-employees" element={<AddEmployees />} />
+        <Route path="/add-sickness" element={<AddSickness />} />
+        <Route path="/annual-leave" element={<AnnualLeave />} />
+        <Route path="/add-lateness" element={<AddLateness />} />
+        <Route path="/add-other-absence" element={<AddOtherAbsence />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
