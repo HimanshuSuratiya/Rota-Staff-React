@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Components/Pages/Home/Home";
 import PersonalDetail from "./Components/Pages/Personal Detail/PersonalDetail";
+import Employees from "./Components/Pages/Employees/Employees";
 
 function App() {
   return (
@@ -9,8 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/personal-detail" element={<PersonalDetail />} />
-        {/*<Route path="/blog-detail" element={<BlogDetail />} />
-        <Route path="/login/*" element={<LoginLayout />} />
+        <Route path="/employees-teams" element={<Employees />} />
+        {/*<Route path="/login/*" element={<LoginLayout />} />
         <Route path="/signup/*" element={<SignupLayout />} />
         <Route path="/post-a-task" element={<PostATasker />} />
         <Route path="/how-it-works" element={<Howitwork />} />

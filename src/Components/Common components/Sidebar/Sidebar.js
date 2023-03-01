@@ -141,7 +141,7 @@ const Sidebar = () => {
                 <div className="scroll">
                   <li><NavLink to="/" className="active"><i className="fa fa-home"></i>Home</NavLink></li>
                   <li><a href="./calendar.html"><i className="fa fa-calendar-check-o"></i>Calendar</a></li>
-                  <li><a href="./manage-teams.html"><i className="fa fa-users"></i>Employees</a></li>
+                  <li><NavLink to="/employees-teams"><i className="fa fa-users"></i>Employees</NavLink></li>
                   <li><a href="./rota-planner.html"><i className="fa fa-id-card-o"></i>Rotas</a></li>
                   <li><a href="add-employees.html"><i className="fa fa-user-o" aria-hidden="true"></i>Add employees</a>
                   </li>
