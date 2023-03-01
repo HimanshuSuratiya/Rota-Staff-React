@@ -1,14 +1,15 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Components/Pages/Home/Home";
+import PersonalDetail from "./Components/Pages/Personal Detail/PersonalDetail";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/*<Route path="/blog/*" element={<BlogLayout />} />
-        <Route path="/blog-detail" element={<BlogDetail />} />
+        <Route path="/personal-detail" element={<PersonalDetail />} />
+        {/*<Route path="/blog-detail" element={<BlogDetail />} />
         <Route path="/login/*" element={<LoginLayout />} />
         <Route path="/signup/*" element={<SignupLayout />} />
         <Route path="/post-a-task" element={<PostATasker />} />

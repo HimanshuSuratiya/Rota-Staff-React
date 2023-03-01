@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   const openNav = () => {
@@ -13,7 +14,7 @@ const Sidebar = () => {
     <>
       <div>
         <div className="left-sidebar-info">
-          <a href="./personal-detail.html" className="user-name-crical"> MR </a>
+          <NavLink to="/personal-detail" className="user-name-crical"> MR </NavLink>
           <div className="nav-links">
             <nav>
               <ul>
@@ -138,7 +139,7 @@ const Sidebar = () => {
                   </div>
                 </div>
                 <div className="scroll">
-                  <li><a href="index.html" className="active"><i className="fa fa-home"></i>Home</a></li>
+                  <li><NavLink to="/" className="active"><i className="fa fa-home"></i>Home</NavLink></li>
                   <li><a href="./calendar.html"><i className="fa fa-calendar-check-o"></i>Calendar</a></li>
                   <li><a href="./manage-teams.html"><i className="fa fa-users"></i>Employees</a></li>
                   <li><a href="./rota-planner.html"><i className="fa fa-id-card-o"></i>Rotas</a></li>
