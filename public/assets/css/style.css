@@ -1929,7 +1929,7 @@ h2.unpublice-titel {
 }
 
 .modal-footer {
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .modal-footer .first-btn {
