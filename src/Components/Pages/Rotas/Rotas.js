@@ -9,7 +9,7 @@ const Rotas = () => {
         document.getElementById('viewUnpublish').style.display = "none";
     })
 
-    function creatNewRota() {
+    const creatNewRota = () => {
         var formOne = document.getElementById('createRota');
         var formTwo = document.getElementById('copyRota');
         if (formOne.style.display == "none") {
@@ -20,7 +20,7 @@ const Rotas = () => {
         }
     }
 
-    function copyNewRota() {
+    const copyNewRota = () => {
         var formOneRota = document.getElementById('createRota');
         var formTwoRota = document.getElementById('copyRota');
         if (formTwoRota.style.display == "none") {
@@ -31,7 +31,7 @@ const Rotas = () => {
         }
     }
 
-    function lessRotaPublish() {
+    const lessRotaPublish = () => {
         let showLess = document.getElementById('lessPublish');
         let viewMore = document.getElementById('viewPublish');
         let contentPublish = document.getElementById('beforePublishRota');
@@ -42,7 +42,7 @@ const Rotas = () => {
         }
     }
 
-    function showRotaPublish() {
+    const showRotaPublish = () => {
         let showLess = document.getElementById('lessPublish');
         let viewMore = document.getElementById('viewPublish');
         let contentPublish = document.getElementById('beforePublishRota');
@@ -64,7 +64,7 @@ const Rotas = () => {
         }
     }
 
-    function unPublishview() {
+    const unPublishview = () => {
         let unPublishViewMore = document.getElementById('viewUnpublish');
         let unPublishLess = document.getElementById('lessUnpublish');
         let contentUnpublish = document.getElementById('unpublish_rota_content_detail');
