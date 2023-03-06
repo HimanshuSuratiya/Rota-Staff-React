@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import PersonalDetail from "./Components/Pages/Personal Detail/PersonalDetail";
 import Home from "./Components/Pages/Home/Home";
-import Calendar from "./Components/Pages/Calendar/Calendar";
+import CalendarLayout from "./Components/Pages/Calendar/CalendarLayout";
 import Employees from "./Components/Pages/Employees/Employees";
 import Rotas from "./Components/Pages/Rotas/Rotas";
 import AddEmployees from "./Components/Pages/Add Employees/AddEmployees";
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/personal-detail" element={<PersonalDetail />} />
         <Route path="/" element={<Home />} />
-        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/calendar" element={<CalendarLayout />} />
         <Route path="/employees-teams" element={<Employees />} />
         <Route path="/rota-planner" element={<Rotas />} />
         <Route path="/add-employees" element={<AddEmployees />} />
