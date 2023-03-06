@@ -11,6 +11,7 @@ import "react-datepicker/dist/react-datepicker.css";
 const locales = {
     "en-US": require("date-fns/locale/en-US"),
 };
+
 const localizer = dateFnsLocalizer({
     format,
     parse,
@@ -28,10 +29,28 @@ const events = [
         backgroundColor: '#70c4f9'
     },
     {
+        title: "Pending",
+        start: new Date(2023, 2, 14),
+        end: new Date(2023, 2, 19),
+        backgroundColor: '#E10078'
+    },
+    {
         title: "Sickness",
         start: new Date(2023, 2, 10),
         end: new Date(2023, 2, 14),
         backgroundColor: '#e0ae2e'
+    },
+    {
+        title: "Toil",
+        start: new Date(2023, 2, 7),
+        end: new Date(2023, 2, 9),
+        backgroundColor: '#ff9d78'
+    },
+    {
+        title: "Other absence",
+        start: new Date(2023, 2, 1),
+        end: new Date(2023, 2, 30),
+        backgroundColor: '#7DAFA3'
     },
     {
         title: "Lateness",
