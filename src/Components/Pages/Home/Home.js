@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { NavLink } from 'react-router-dom';
 import Header from "../../Common components/Header/Header";
 
 const Home = () => {
@@ -60,7 +61,7 @@ const Home = () => {
                                                 <h2>Overview</h2>
                                             </div>
                                             <div className="col-lg-6 add-btn-top">
-                                                <h4><a href="annual-leave.html">+ Add time off</a></h4>
+                                                <h4><NavLink to="/annual-leave">+ Add time off</NavLink></h4>
                                             </div>
                                         </div>
                                         <div className="flx-box">

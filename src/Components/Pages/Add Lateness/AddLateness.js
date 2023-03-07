@@ -21,7 +21,7 @@ const AddLateness = () => {
                                     <div class="row working-time-pattern annual-leave">
                                         <div class="col-md-12">
                                             <div class="heading">
-                                                <h3 class="head">Add annual leave for michael</h3>
+                                                <h3 class="head">Add lateness leave for michael</h3>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
