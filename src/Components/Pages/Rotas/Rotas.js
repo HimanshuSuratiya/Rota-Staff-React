@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Image from '../../images/Image';
 import Header from "../../Common components/Header/Header";
+import { Link } from 'react-router-dom';
 
 const Rotas = () => {
 
@@ -187,7 +188,7 @@ const Rotas = () => {
                                                                 <div class="col-md-10 px-2">
                                                                     <div class="d-flex justify-content-between align-items-center">
                                                                         <div>
-                                                                            <a href="./timeline-view.html" class="rota_shift_employee_name">Test</a>
+                                                                            <Link to="/timeline-view" class="rota_shift_employee_name">Test</Link>
                                                                         </div>
                                                                         <div class="dropdown">
                                                                             <button class=" my-2 d-flex justify-content-center align-items-center three_dot_btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -203,7 +204,7 @@ const Rotas = () => {
                                                                                 <ul>
                                                                                     <li>
                                                                                         <span class="edit-icon dropdown_icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                                                                                        <a href="./timeline-view.html">Edit</a>
+                                                                                        <Link to="/timeline-view">Edit</Link>
                                                                                     </li>
                                                                                     <li>
                                                                                         <span class="i-icon dropdown_icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
@@ -243,7 +244,7 @@ const Rotas = () => {
                                                                 <div class="col-md-10 px-2">
                                                                     <div class="d-flex justify-content-between align-items-center">
                                                                         <div>
-                                                                            <a href="./timeline-view.html" class="rota_shift_employee_name">Test</a>
+                                                                            <Link to="/timeline-view" class="rota_shift_employee_name">Test</Link>
                                                                         </div>
                                                                         <div class="dropdown">
                                                                             <button class=" my-2 d-flex justify-content-center align-items-center three_dot_btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -259,7 +260,7 @@ const Rotas = () => {
                                                                                 <ul>
                                                                                     <li>
                                                                                         <span class="edit-icon dropdown_icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                                                                                        <a href="./timeline-view.html">Edit</a>
+                                                                                        <Link to="/timeline-view">Edit</Link>
                                                                                     </li>
                                                                                     <li>
                                                                                         <span class="i-icon dropdown_icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
@@ -319,7 +320,7 @@ const Rotas = () => {
                                                                 <div class="col-md-10 px-2">
                                                                     <div class="d-flex justify-content-between align-items-center">
                                                                         <div>
-                                                                            <a href="./timeline-view.html" class="rota_shift_employee_name">Test</a>
+                                                                            <Link to="/timeline-view" class="rota_shift_employee_name">Test</Link>
                                                                         </div>
                                                                         <div class="dropdown">
                                                                             <button class=" my-2 d-flex justify-content-center align-items-center three_dot_btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -335,7 +336,7 @@ const Rotas = () => {
                                                                                 <ul>
                                                                                     <li>
                                                                                         <span class="edit-icon dropdown_icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                                                                                        <a href="./timeline-view.html">Edit</a>
+                                                                                        <Link to="/timeline-view">Edit</Link>
                                                                                     </li>
                                                                                     <li>
                                                                                         <span class="i-icon dropdown_icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>

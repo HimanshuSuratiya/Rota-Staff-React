@@ -11,6 +11,7 @@ import AnnualLeave from "./Components/Pages/Annual Leave/AnnualLeave";
 import AddLateness from "./Components/Pages/Add Lateness/AddLateness";
 import AddOtherAbsence from "./Components/Pages/Add Other Absence/AddOtherAbsence";
 import Sidebar from "./Components/Common components/Sidebar/Sidebar";
+import TimelineView from "./Components/Pages/Timeline View/TimelineView";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/employees-teams" element={<Employees />} />
         <Route path="/rota-planner" element={<Rotas />} />
         <Route path="/add-employees" element={<AddEmployees />} />
+        <Route path="/timeline-view" element={<TimelineView />} />
         <Route path="/add-sickness" element={<AddSickness />} />
         <Route path="/annual-leave" element={<AnnualLeave />} />
         <Route path="/add-lateness" element={<AddLateness />} />
