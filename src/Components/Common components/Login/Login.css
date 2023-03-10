@@ -1,0 +1,13 @@
+.Loginanimation {
+    animation: Loginanimation 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes Loginanimation {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}

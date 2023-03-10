@@ -12,6 +12,7 @@ import AddLateness from "./Components/Pages/Add Lateness/AddLateness";
 import AddOtherAbsence from "./Components/Pages/Add Other Absence/AddOtherAbsence";
 import Sidebar from "./Components/Common components/Sidebar/Sidebar";
 import TimelineView from "./Components/Pages/Timeline View/TimelineView";
+import Login from "./Components/Common components/Login/Login";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/personal-detail" element={<PersonalDetail />} />
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/calendar" element={<CalendarLayout />} />
         <Route path="/employees-teams" element={<Employees />} />
         <Route path="/rota-planner" element={<Rotas />} />
