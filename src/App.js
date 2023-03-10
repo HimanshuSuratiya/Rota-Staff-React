@@ -13,25 +13,30 @@ import AddOtherAbsence from "./Components/Pages/Add Other Absence/AddOtherAbsenc
 import Sidebar from "./Components/Common components/Sidebar/Sidebar";
 import TimelineView from "./Components/Pages/Timeline View/TimelineView";
 import Login from "./Components/Common components/Login/Login";
+import PrivateRoute from "./Components/PrivateRoute";
 
 function App() {
+  const isAuthenticated = true;
+
   return (
     <>
-      <Sidebar />
+      {isAuthenticated && <Sidebar />}
       <Routes>
-        <Route path="/personal-detail" element={<PersonalDetail />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/calendar" element={<CalendarLayout />} />
-        <Route path="/employees-teams" element={<Employees />} />
-        <Route path="/rota-planner" element={<Rotas />} />
-        <Route path="/add-employees" element={<AddEmployees />} />
-        <Route path="/timeline-view" element={<TimelineView />} />
-        <Route path="/add-sickness" element={<AddSickness />} />
-        <Route path="/annual-leave" element={<AnnualLeave />} />
-        <Route path="/add-lateness" element={<AddLateness />} />
-        <Route path="/add-other-absence" element={<AddOtherAbsence />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        {isAuthenticated ? null : <Route path="/login" element={<Login />} />}
+        <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
+          <Route path="/personal-detail" element={<PersonalDetail />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/calendar" element={<CalendarLayout />} />
+          <Route path="/add-employees" element={<AddEmployees />} />
+          <Route path="/timeline-view" element={<TimelineView />} />
+          <Route path="/add-sickness" element={<AddSickness />} />
+          <Route path="/annual-leave" element={<AnnualLeave />} />
+          <Route path="/add-lateness" element={<AddLateness />} />
+          <Route path="/add-other-absence" element={<AddOtherAbsence />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+        <Route path="/employees-teams" element={<PrivateRoute isAuthenticated={isAuthenticated}><Employees /></PrivateRoute>} />
+        <Route path="/rota-planner" element={<PrivateRoute isAuthenticated={isAuthenticated}><Rotas /></PrivateRoute>} />
       </Routes>
     </>
   );
