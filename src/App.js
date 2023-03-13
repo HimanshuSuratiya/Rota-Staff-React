@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import PersonalDetail from "./Components/Pages/Personal Detail/PersonalDetail";
 import Home from "./Components/Pages/Home/Home";
@@ -14,24 +14,16 @@ import Sidebar from "./Components/Common components/Sidebar/Sidebar";
 import TimelineView from "./Components/Pages/Timeline View/TimelineView";
 import Login from "./Components/Common components/Login/Login";
 import PrivateRoute from "./Components/PrivateRoute";
-
-const checkIsAuthenticated = () => {
-  let isAuth = localStorage.getItem('isAutehnticated');
-  if (isAuth) {
-    return JSON.parse(localStorage.getItem('isAutehnticated'));
-  } else {
-    return null;
-  }
-}
+import { useSelector } from "react-redux";
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(checkIsAuthenticated());
+  const isAuthenticated = useSelector((state) => state.handleLoginLogout)
 
   return (
     <>
       {isAuthenticated && <Sidebar />}
       <Routes>
-        {isAuthenticated ? null : <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />}
+        {isAuthenticated ? null : <Route path="/login" element={<Login />} />}
         <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
           <Route path="/personal-detail" element={<PersonalDetail />} />
           <Route path="/" element={<Home />} />
