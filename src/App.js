@@ -16,7 +16,7 @@ import Login from "./Components/Common components/Login/Login";
 import PrivateRoute from "./Components/PrivateRoute";
 
 function App() {
-  const isAuthenticated = true;
+  const isAuthenticated = false;
 
   return (
     <>
