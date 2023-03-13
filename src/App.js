@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import PersonalDetail from "./Components/Pages/Personal Detail/PersonalDetail";
 import Home from "./Components/Pages/Home/Home";
@@ -15,14 +15,23 @@ import TimelineView from "./Components/Pages/Timeline View/TimelineView";
 import Login from "./Components/Common components/Login/Login";
 import PrivateRoute from "./Components/PrivateRoute";
 
+const checkIsAuthenticated = () => {
+  let isAuth = localStorage.getItem('isAutehnticated');
+  if (isAuth) {
+    return JSON.parse(localStorage.getItem('isAutehnticated'));
+  } else {
+    return null;
+  }
+}
+
 function App() {
-  const isAuthenticated = false;
+  const [isAuthenticated, setIsAuthenticated] = useState(checkIsAuthenticated());
 
   return (
     <>
       {isAuthenticated && <Sidebar />}
       <Routes>
-        {isAuthenticated ? null : <Route path="/login" element={<Login />} />}
+        {isAuthenticated ? null : <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />}
         <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>
           <Route path="/personal-detail" element={<PersonalDetail />} />
           <Route path="/" element={<Home />} />
