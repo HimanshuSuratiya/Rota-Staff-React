@@ -283,7 +283,7 @@ const Rotas = () => {
                                                                         </div>
                                                                         {/* <!-- Button trigger modal --> */}
                                                                         {/* <!-- Modal --> */}
-                                                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                        <div class="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                             <div class="modal-dialog">
                                                                                 <div class="modal-content">
                                                                                     <div class="modal-header">
@@ -359,7 +359,7 @@ const Rotas = () => {
                                                                         </div>
                                                                         {/* <!-- Button trigger modal --> */}
                                                                         {/* <!-- Modal --> */}
-                                                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                        <div class="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                             <div class="modal-dialog">
                                                                                 <div class="modal-content">
                                                                                     <div class="modal-header">
@@ -882,7 +882,7 @@ const Rotas = () => {
                 </div>
             </section>
             {/* <!-- Modal View start --> */}
-            <div class="modal fade" id="exampleModalViewDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModalViewDetail" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" style={{ maxWidth: '70rem' }}>
                     <div class="modal-content">
                         <div class="modal-header">
@@ -959,7 +959,7 @@ const Rotas = () => {
             {/* <!-- Modal View end --> */}
 
             {/* <!-- Modal --> */}
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">

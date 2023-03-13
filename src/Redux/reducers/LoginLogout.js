@@ -1,4 +1,13 @@
-const isAuthenticated = true;
+const checkIsAuthenticated = () => {
+    let isAuth = localStorage.getItem('isAutehnticated');
+    if (isAuth) {
+        return JSON.parse(localStorage.getItem('isAutehnticated'));
+    } else {
+        return null;
+    }
+}
+
+const isAuthenticated = checkIsAuthenticated();
 
 const handleLoginLogout = (state = isAuthenticated, action) => {
     switch (action.type) {

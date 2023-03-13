@@ -94,7 +94,7 @@ const TimelineView = () => {
                                                             Publish
                                                         </button>
                                                         {/* <!-- Modal --> */}
-                                                        <div className="modal fade" id="exampleModalPublish" tabindex="-1"
+                                                        <div className="modal fade" id="exampleModalPublish" tabIndex="-1"
                                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div className="modal-dialog">
                                                                 <div className="modal-content">
@@ -431,7 +431,7 @@ const TimelineView = () => {
             </section>
 
             {/* <!-- Add Shift Modal --> */}
-            <div className="modal fade addShift" id="exampleModalAddShift" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div className="modal fade addShift" id="exampleModalAddShift" tabIndex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div className="modal-dialog" style={{ display: 'block', maxWidth: '800px' }}>
                     <div className="modal-content">
@@ -673,7 +673,7 @@ const TimelineView = () => {
             {/* <!-- Add Shift Modal --> */}
 
             {/* <!-- shift timing  Modal --> */}
-            <div className="modal fade" id="exampleModalShiftModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div className="modal fade" id="exampleModalShiftModal" tabIndex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div className="modal-dialog" style={{ maxWidth: '50rem' }}>
                     <div className="modal-content">

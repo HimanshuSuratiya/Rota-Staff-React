@@ -274,7 +274,7 @@ const AddEmployees = () => {
                                                             <button type="button" data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal" class="continue_btn"
                                                                 id="next3">Save and continue</button>
-                                                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                            <div class="modal fade" id="exampleModal" tabIndex="-1"
                                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                     <div class="modal-content">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Image from "../../images/Image";
 import { makeStyles } from "@material-ui/core/styles";
@@ -6,7 +6,9 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { TextField, Checkbox } from '@mui/material';
 import { NavLink } from "react-router-dom";
 import "./Login.css";
-import { LoginApi } from "./Service";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { handleLogin } from "../../../Redux/actions/index";
 
 const useStyles = makeStyles(() => ({
     LoginBtn: {
@@ -57,7 +59,9 @@ const defaultState = {
     password: '',
 }
 
-const Login = ({ setIsAuthenticated }) => {
+const Login = () => {
+    const baseUrl = ' http://18.181.84.1:5000/api';
+    const dispatch = useDispatch()
     const classes = useStyles();
     const [state, setState] = useState(defaultState)
 
@@ -71,8 +75,16 @@ const Login = ({ setIsAuthenticated }) => {
         })
     }
 
-    const handleLogin = () => {
-        LoginApi(state, setIsAuthenticated)
+    const handleLoginUser = () => {
+        axios.post(`${baseUrl}/adminLogin`, {
+            email: state.email,
+            password: state.password,
+        }).then((response) => {
+            localStorage.setItem('isAutehnticated', response.data.success)
+            dispatch(handleLogin())
+        }).catch((error) => {
+            console.log(error)
+        })
     }
 
     return (
@@ -117,7 +129,7 @@ const Login = ({ setIsAuthenticated }) => {
                                             <NavLink to="/login/forget-password" >Forgot password?</NavLink>
                                         </div>
                                         <div className="d-flex justify-content-center">
-                                            <button className={`btn btn-primary btn-lg btn-block ${classes.LoginBtn}`} onClick={handleLogin}>Log in <ArrowRightAltIcon /></button>
+                                            <button className={`btn btn-primary btn-lg btn-block ${classes.LoginBtn}`} onClick={handleLoginUser}>Log in <ArrowRightAltIcon /></button>
                                         </div>
                                         <div className="divider d-flex align-items-center my-3 justify-content-center">
                                             <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>

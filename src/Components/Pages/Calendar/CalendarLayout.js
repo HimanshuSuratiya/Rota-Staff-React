@@ -179,7 +179,7 @@ const CalendarLayout = () => {
                     </div>
                 </div>
             </section>
-            <div className="modal fade unapproved_modal_content" id="exampleModalUnapproved" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade unapproved_modal_content" id="exampleModalUnapproved" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" style={{ maxWidth: '50vw' }}>
                     <div className="modal-content content-modal">
                         <div className="modal-header modal-head">

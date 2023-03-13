@@ -1469,7 +1469,7 @@ const Employees = () => {
                                                                             data-bs-target="#exampleModal" className="">Add a new
                                                                             team</button>
                                                                         {/* Modal */}
-                                                                        <div className="modal fade" id="exampleModal" tabindex="-1"
+                                                                        <div className="modal fade" id="exampleModal" tabIndex="-1"
                                                                             aria-labelledby="exampleModalLabel"
                                                                             aria-hidden="true">
                                                                             <div className="modal-dialog" id="show">
