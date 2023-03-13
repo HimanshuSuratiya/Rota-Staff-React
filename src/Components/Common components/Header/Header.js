@@ -1,6 +1,14 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { handleLogout } from '../../../Redux/actions';
 
 const Header = () => {
+    const dispatch = useDispatch()
+
+    const handleLogoutUser = () => {
+        localStorage.setItem('isAutehnticated', false)
+        dispatch(handleLogout())
+    }
     return (
         <>
             <div className="row position">
@@ -29,7 +37,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="logout-right">
-                        <h4><a href="#"><i className="fa fa-sign-in"></i> Logout</a></h4>
+                        <h4 onClick={() => { handleLogoutUser() }}><a href=''><i className="fa fa-sign-in"></i> Logout</a></h4>
                     </div>
                 </div>
             </div>
